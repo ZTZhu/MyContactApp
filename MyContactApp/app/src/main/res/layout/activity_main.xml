@@ -32,12 +32,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Data"
+        android:text="ADD DATA"
         android:id="@+id/button_add"
+        android:onClick="addData"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/editText_name"
-        android:layout_alignStart="@+id/editText_name"
-        android:onClick="addData" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,4 +76,27 @@
         android:layout_toRightOf="@+id/textView3"
         android:layout_alignRight="@+id/editText_age"
         android:layout_alignEnd="@+id/editText_age" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETRIEVE DATA"
+        android:id="@+id/button_retrieve"
+        android:onClick="viewData"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/button_search_name"
+        android:layout_alignRight="@+id/editText_address"
+        android:layout_alignEnd="@+id/editText_address" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH NAME"
+        android:id="@+id/button_search_name"
+        android:onClick="searchName"
+        android:singleLine="true"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/button_add"
+        android:layout_toLeftOf="@+id/button_retrieve"
+        android:layout_toStartOf="@+id/button_retrieve" />
 </RelativeLayout>
