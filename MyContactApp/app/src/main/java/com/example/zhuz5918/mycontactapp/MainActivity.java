@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 buffer.append("Age: " + res.getString(3));
                 showMessage("Data", buffer.toString());
                 Log.d("MyContact", buffer.toString());
+
             }
         }
     }
